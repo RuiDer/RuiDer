@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RuiDerThrift:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="RuiDerThrift_1.war">
+      <element id="artifact" artifact-name="RuiDerThrift:war exploded" />
+    </root>
+  </artifact>
+</component>

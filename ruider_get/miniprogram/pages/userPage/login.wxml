@@ -1,0 +1,6 @@
+<!--miniprogram/pages/userPage/login.wxml-->
+<!--<text>miniprogram/pages/userPage/login.wxml</text>-->
+<input type='text' bindinput='input_name' placeholder='登录名'></input>
+<input type='text' bindinput='input_pwd' placeholder='密码'></input>
+<button bindtap='submitButton'>登录</button>
+

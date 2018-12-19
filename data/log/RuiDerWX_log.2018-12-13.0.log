@@ -1,0 +1,24 @@
+14:05:42.092 [main] INFO  com.ruider.Application - Starting Application on admindeMacBook-Pro.local with PID 12865 (/Users/mahede/ruider/MyProject/RuiDerWX/target/classes started by mahede in /Users/mahede/ruider/MyProject/RuiDerWX)
+14:05:42.095 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+14:05:42.790 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:05:42.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:05:42.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+14:05:43.186 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9df0ce55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:05:43.522 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:05:43.537 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:05:43.542 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:05:43.542 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+14:05:43.550 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mahede/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+14:05:43.641 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:05:43.641 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1485 ms
+14:05:43.681 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+14:05:43.685 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:05:43.686 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:05:43.686 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+14:05:43.686 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:05:43.686 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+14:05:44.075 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:05:44.612 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:05:44.636 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14:05:44.650 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:05:44.655 [main] INFO  com.ruider.Application - Started Application in 3.195 seconds (JVM running for 3.824)

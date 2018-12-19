@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/userNeedsManager",
+    "pages/myList/myList",
+    "pages/editUser/editUser",
+    "pages/main/main",
+    "pages/addNew/addNew",
+    "pages/tem/tem",
+    "pages/userPage/login",
+    "pages/logs/logs",
+    "pages/emptyPage/emptyShow",
+    "pages/editNeeds/editNeeds"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "RuiDer专属",
+    "navigationBarTextStyle": "black"
+  }
+}
