@@ -6,6 +6,7 @@ package com.ruider.controller;
 import com.ruider.common.Result;
 import com.ruider.model.User;
 import com.ruider.utils.CommonUtils;
+import com.ruider.utils.HttpRequest;
 import net.sf.json.JSONObject;
 import com.ruider.service.UserService;
 
@@ -19,6 +20,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -42,10 +44,45 @@ public class UserController {
 
     Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @RequestMapping("test")
-    public String test() {
-        return "test";
+    @GetMapping("test")
+    public Result test(String encryptedData, String iv, String code) {
+        Result result = new Result();
+
+        if (code == null || code.length() == 0) {
+            result.setIsSuccess(false);
+            result.setMessage("code不能为空");
+            return result;
+        }
+
+        try{
+            logger.info("editUserDetails start");
+
+            String params = "appid=" + APPID + "&secret=" + APPSECRECT + "&js_code=" + code + "&grant_type=" + GRANTTYPE;
+            //发送请求
+            String sr = HttpRequest.sendGet("https://api.weixin.qq.com/sns/jscode2session", params);
+            //解析相应内容（转换成json对象）
+            JSONObject json = JSONObject.fromObject(sr);
+            //获取会话密钥（session_key）
+            String session_key = json.get("session_key").toString();
+            //用户的唯一标识（openid）
+            String openid = (String) json.get("openid");
+            Map<String,String> userInfo = new HashMap<>();
+            userInfo.put("session_key", session_key);
+            userInfo.put("openid", openid);
+            result.setIsSuccess(true);
+            result.setData(userInfo);
+            result.setMessage("获取微信用户信息成功");
+            logger.info("【获取微信用户信息成功】test success");
+            return result;
+        }catch (Exception e) {
+            logger.error("【获取微信用户信息成功】test fail", e);
+            result.setCode(Result.FAIL_CODE);
+            result.setIsSuccess(false);
+            result.setMessage("获取微信用户信息成功");
+            return result;
+        }
     }
+
 
     @RequestMapping("/toLogin")
     public  boolean login (String username, String password){
