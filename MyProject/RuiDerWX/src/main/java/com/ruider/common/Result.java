@@ -13,6 +13,12 @@ public class Result {
 
     public static final int SUCCESS_CODE = 140;
 
+    public static final int EXCEPTION_CODE = 150;
+
+    public static final int OVER_NUMBER = 160;
+
+    public static final int OVER_TIME = 170;
+
     int code;
 
     String message;

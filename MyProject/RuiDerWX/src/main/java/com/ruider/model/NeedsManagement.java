@@ -33,13 +33,13 @@ public class NeedsManagement {
 
     Date updateTime;
 
-    private String extendField1;
+    private int joinNo;    //当前加入人数
 
-    private String extendField2;
+    private String viewNo;   //点击量
 
-    private String extendField3;
+    private int isOverTime;
 
-    private String extendField4;
+    private int isOverNo;
 
     private String extendField5;
 
@@ -151,36 +151,36 @@ public class NeedsManagement {
         this.updateTime = updateTime;
     }
 
-    public String getExtendField1() {
-        return extendField1;
+    public int getJoinNo() {
+        return joinNo;
     }
 
-    public void setExtendField1(String extendField1) {
-        this.extendField1 = extendField1;
+    public void setJoinNo(int joinNo) {
+        this.joinNo = joinNo;
     }
 
-    public String getExtendField2() {
-        return extendField2;
+    public String getViewNo() {
+        return viewNo;
     }
 
-    public void setExtendField2(String extendField2) {
-        this.extendField2 = extendField2;
+    public void setViewNo(String extendField2) {
+        this.viewNo = viewNo;
     }
 
-    public String getExtendField3() {
-        return extendField3;
+    public int getIsOverTime() {
+        return isOverTime;
     }
 
-    public void setExtendField3(String extendField3) {
-        this.extendField3 = extendField3;
+    public void setIsOverTime(int isOverTime) {
+        this.isOverTime = isOverTime;
     }
 
-    public String getExtendField4() {
-        return extendField4;
+    public int getIsOverNo() {
+        return isOverNo;
     }
 
-    public void setExtendField4(String extendField4) {
-        this.extendField4 = extendField4;
+    public void setIsOverNo(int extendField4) {
+        this.isOverNo = isOverNo;
     }
 
     public String getExtendField5() {
@@ -223,10 +223,10 @@ public class NeedsManagement {
                 ", limitNo=" + limitNo +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
-                ", extendField1='" + extendField1 + '\'' +
-                ", extendField2='" + extendField2 + '\'' +
-                ", extendField3='" + extendField3 + '\'' +
-                ", extendField4='" + extendField4 + '\'' +
+                ", extendField1='" + joinNo + '\'' +
+                ", extendField2='" + viewNo + '\'' +
+                ", extendField3='" + isOverTime + '\'' +
+                ", extendField4='" + isOverNo + '\'' +
                 ", extendField5='" + extendField5 + '\'' +
                 ", extendField6='" + extendField6 + '\'' +
                 ", extendField7='" + extendField7 + '\'' +

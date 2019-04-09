@@ -1,0 +1,235 @@
+21:57:07.913 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 3901 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+21:57:07.916 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+21:57:08.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:57:08.998 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:57:09.042 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+21:57:09.464 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$7a0a1f33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:09.471 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac4dad47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:09.930 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:57:09.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:57:09.955 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:57:09.955 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+21:57:09.964 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21:57:10.068 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:57:10.069 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2002 ms
+21:57:10.109 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+21:57:10.113 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:57:10.114 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+21:57:10.114 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+21:57:10.114 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+21:57:10.114 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+21:57:10.870 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:57:11.256 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:57:11.281 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+21:57:11.292 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:57:11.296 [main] INFO  com.ruider.Application - Started Application in 4.204 seconds (JVM running for 5.688)
+21:57:29.509 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:57:29.512 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:57:29.525 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+21:57:29.533 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+21:57:29.566 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+21:58:44.297 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+21:58:44.298 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+21:59:18.761 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+21:59:18.764 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+21:59:27.755 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+21:59:27.825 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+21:59:27.858 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:59:27.861 [http-nio-8080-exec-5] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+21:59:28.540 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:59:28.646 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+21:59:34.701 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+21:59:34.703 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - getUserDetails start 
+21:59:34.709 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+21:59:51.361 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:59:51.386 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:59:51.410 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:59:56.066 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 3999 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+21:59:56.072 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+21:59:57.627 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:59:57.633 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:59:57.709 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+21:59:58.280 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$f47f8413] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:59:58.287 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26c31227] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:59:58.820 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:59:58.847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:59:58.854 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:59:58.855 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+21:59:58.886 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21:59:59.052 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:59:59.052 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2896 ms
+21:59:59.105 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'formContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.filter.OrderedFormContentFilter]: Factory method 'formContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.ser.BeanSerializerFactory
+21:59:59.138 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+21:59:59.149 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+21:59:59.158 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:59:59.169 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.ruider.Application.main(Application.java:25)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'formContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.filter.OrderedFormContentFilter]: Factory method 'formContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.ser.BeanSerializerFactory
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:236)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:192)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:187)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:370)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.filter.OrderedFormContentFilter]: Factory method 'formContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.ser.BeanSerializerFactory
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 54 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.ser.BeanSerializerFactory
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:581)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:480)
+	at org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.build(Jackson2ObjectMapperBuilder.java:622)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.<init>(MappingJackson2HttpMessageConverter.java:59)
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:76)
+	at org.springframework.web.filter.FormContentFilter.<init>(FormContentFilter.java:60)
+	at org.springframework.boot.web.servlet.filter.OrderedFormContentFilter.<init>(OrderedFormContentFilter.java:29)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.formContentFilter(WebMvcAutoConfiguration.java:166)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$5b05509e.CGLIB$formContentFilter$1(<generated>)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$5b05509e$$FastClassBySpringCGLIB$$a129db60.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$5b05509e.formContentFilter(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 55 common frames omitted
+22:00:06.053 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 4002 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+22:00:06.056 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+22:00:06.818 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:00:06.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+22:00:06.844 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+22:00:07.186 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$17200efb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:00:07.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49639d0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:00:07.539 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:00:07.550 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:00:07.555 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:00:07.555 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+22:00:07.561 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+22:00:07.628 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:00:07.629 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1481 ms
+22:00:07.666 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+22:00:07.670 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:00:07.670 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:00:07.670 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+22:00:07.670 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:00:07.671 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+22:00:08.429 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:00:08.792 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:00:08.815 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:00:08.829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:00:08.834 [main] INFO  com.ruider.Application - Started Application in 3.558 seconds (JVM running for 5.58)
+22:00:28.351 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:00:28.352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:00:28.364 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+22:00:28.372 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:00:28.398 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - getUserDetails start 
+22:00:28.417 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:00:28.420 [http-nio-8080-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+22:00:28.830 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:00:28.891 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+22:00:56.891 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:00:56.893 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表开始】 getNeedsByUserId start
+22:00:56.912 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表成功】 getNeedsByUserId success
+22:01:01.384 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:01.392 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+22:01:01.420 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+22:01:09.661 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:09.662 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+22:01:09.665 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+22:01:14.414 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:14.416 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+22:01:14.421 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+22:01:16.789 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:16.791 [http-nio-8080-exec-6] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+22:01:16.816 [http-nio-8080-exec-6] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+22:01:51.539 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:51.541 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量】 getNoWatchedMessageNo start
+22:01:51.564 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量成功】 getNoWatchedMessageNo success
+22:01:53.483 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:01:53.486 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+22:01:53.835 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+22:02:12.855 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:02:12.857 [http-nio-8080-exec-9] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+22:02:12.887 [http-nio-8080-exec-9] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+22:02:19.563 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:02:19.565 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+22:02:19.574 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+22:02:27.654 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:02:27.656 [http-nio-8080-exec-1] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+22:02:27.658 [http-nio-8080-exec-1] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+22:03:34.011 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:03:34.012 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+22:03:34.014 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+22:03:37.174 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:03:37.175 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+22:03:37.178 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+22:03:40.394 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:03:40.396 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+22:03:40.398 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+22:03:43.048 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:03:43.049 [http-nio-8080-exec-6] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+22:03:43.079 [http-nio-8080-exec-6] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+22:03:45.404 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+22:03:45.406 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取需求信息开始】 getNeedsDetailsById start
+22:03:45.408 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取需求信息成功】 getNeedsDetailsById success
+22:20:50.034 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+22:20:50.085 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:20:50.111 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

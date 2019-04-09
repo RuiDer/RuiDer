@@ -1,12 +1,12 @@
 // miniprogram/pages/editUser/editUserDetails.js
-var app = getApp();
-
+const app = getApp();
 Page({
   /**
    * 页面的初始数据
    */
 
   data: {
+    userId: app.globalData.userId,
     id:{},
     dataFromMyList:{},
     sex: {} ,
@@ -69,8 +69,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let that = this;
+    that.setData({
+      userId: app.globalData.userId,
+    })
     var data1 = JSON.parse(options.data);
-    this.setData({
+    that.setData({
       id:data1.id,
       dataFromMyList: data1,
       sex: data1.sex,

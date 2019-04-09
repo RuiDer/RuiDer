@@ -1,0 +1,80 @@
+19:37:49.914 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 6656 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+19:37:49.917 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+19:37:50.822 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:37:50.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:37:50.890 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+19:37:51.262 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$4b4d41c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:37:51.268 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d90cfdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:37:51.815 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:37:51.834 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:37:51.843 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:37:51.843 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+19:37:51.854 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19:37:51.972 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:37:51.972 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1930 ms
+19:37:52.020 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+19:37:52.028 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:37:52.029 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:37:52.029 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+19:37:52.029 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:37:52.029 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+19:37:52.848 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+19:37:53.252 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:37:53.275 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+19:37:53.291 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:37:53.296 [main] INFO  com.ruider.Application - Started Application in 3.996 seconds (JVM running for 6.272)
+19:38:51.198 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:38:51.199 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:38:51.213 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+19:38:51.225 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:38:51.268 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+19:39:00.469 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:39:00.534 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+19:39:00.567 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:39:00.571 [http-nio-8080-exec-2] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+19:39:01.219 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:39:01.300 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+19:39:12.401 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:40:39.482 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s158ms).
+19:41:30.025 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s544ms).
+19:41:30.027 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.039 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.043 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.043 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.044 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.045 [http-nio-8080-exec-9] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.045 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.043 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.044 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.046 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.048 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.047 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.049 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.048 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量】 getNoWatchedMessageNo start
+19:41:30.049 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:30.048 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.050 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.051 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:30.057 [http-nio-8080-exec-9] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.081 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.082 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.084 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.087 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.090 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.090 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:30.127 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量成功】 getNoWatchedMessageNo success
+19:41:33.980 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:33.981 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - getUserDetails start 
+19:41:33.984 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+19:41:38.290 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:41:38.292 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表开始】 getNeedsByUserId start
+19:41:38.299 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表成功】 getNeedsByUserId success
+19:44:50.217 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:44:50.219 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+19:44:50.295 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+19:44:52.413 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+19:44:52.415 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态】 getMessageList start
+19:44:52.723 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id和消息类型id获取未查看的信息，并且设置查看状态为查看状态成功】 getMessageList success
+19:47:26.186 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+19:47:26.221 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:47:26.250 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

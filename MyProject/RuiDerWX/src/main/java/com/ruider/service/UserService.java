@@ -12,7 +12,9 @@ public interface UserService {
 
     int addUser(HashMap<String,Object> paramMap) throws Exception;
 
-    User getUserDetails(HashMap<String,Object> paramMap) throws Exception;
+    User getUserDetails(int userId) throws Exception;
 
     int updateUser(HashMap<String,Object> paramMap) throws Exception;
+
+    User selectUserById(int userId);
 }

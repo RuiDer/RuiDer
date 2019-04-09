@@ -1,13 +1,12 @@
 // miniprogram/pages/editUser/editUserDetails.js
-var app = getApp();
-
+const app = getApp();
 Page({
   /**
    * 页面的初始数据
    */
 
   data: {
-    userId: 1,
+    userId: app.globalData.userId,
     // 字数限制
     current: 0,
     max: 300,
@@ -125,7 +124,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
+    let that = this;
+    that.setData({
+      userId: app.globalData.userId,
+    })
+    that.setData({
       dataFromEditList: JSON.parse(options.data),
       deadline: JSON.parse(options.data).deadline.substring(0, 10),
       startDate: JSON.parse(options.data).startTime.substring(0, 10)

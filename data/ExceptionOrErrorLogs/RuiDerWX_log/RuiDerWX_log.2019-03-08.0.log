@@ -1,0 +1,178 @@
+00:32:27.439 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+00:32:27.491 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:32:27.509 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:31:32.603 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 9209 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+23:31:32.606 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+23:31:33.921 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:31:33.926 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+23:31:33.974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+23:31:34.318 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$6cae4a42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:31:34.323 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ef1d856] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:31:34.779 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:31:34.797 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:31:34.802 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:31:34.802 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+23:31:34.812 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+23:31:34.928 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:31:34.929 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2101 ms
+23:31:34.975 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:31:34.982 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:31:34.982 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:31:34.983 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+23:31:34.983 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:31:34.983 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+23:31:35.663 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:31:36.055 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:31:36.083 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:31:36.096 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:31:36.100 [main] INFO  com.ruider.Application - Started Application in 4.207 seconds (JVM running for 5.582)
+23:31:40.645 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:31:40.646 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:31:40.657 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+23:31:40.665 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:31:40.692 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:36:04.927 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:36:04.929 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:36:11.344 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:36:11.408 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:36:11.429 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:36:11.432 [http-nio-8080-exec-4] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:36:11.987 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:36:12.055 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:36:15.971 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+23:36:16.009 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:36:16.029 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:41:52.328 [main] INFO  com.ruider.Application - Starting Application on mahededeMacBook-Pro.local with PID 9222 (/Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX/target/classes started by ruider in /Users/ruider/RuiDer/RuiDer/MyProject/RuiDerWX)
+23:41:52.330 [main] INFO  com.ruider.Application - No active profile set, falling back to default profiles: default
+23:41:53.284 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:41:53.287 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+23:41:53.325 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+23:41:53.618 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.ruider.config.RedisConfig$$EnhancerBySpringCGLIB$$f584accf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:41:53.623 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27c83ae3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:41:53.949 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:41:53.966 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:41:53.971 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:41:53.972 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+23:41:53.978 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ruider/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+23:41:54.056 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:41:54.056 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1549 ms
+23:41:54.092 [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:41:54.095 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:41:54.096 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:41:54.096 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+23:41:54.096 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:41:54.096 [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+23:41:54.728 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:41:55.187 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:41:55.218 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:41:55.234 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:41:55.240 [main] INFO  com.ruider.Application - Started Application in 3.401 seconds (JVM running for 4.374)
+23:42:09.979 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:42:09.980 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:42:09.992 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+23:42:10.007 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:42:10.057 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:42:11.832 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:42:11.875 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:42:11.890 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:42:11.893 [http-nio-8080-exec-2] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:42:12.193 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:42:12.235 [http-nio-8080-exec-2] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:42:14.802 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:42:14.806 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量】 getNoWatchedMessageNo start
+23:42:14.857 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量成功】 getNoWatchedMessageNo success
+23:42:18.152 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:42:18.155 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:42:18.162 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:46:29.438 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:46:29.440 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:46:31.170 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:46:31.174 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:46:31.178 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:46:32.255 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:46:32.256 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:46:32.261 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:47:27.612 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:47:27.615 [http-nio-8080-exec-9] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:47:29.377 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:47:29.379 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:47:29.381 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:47:30.259 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:47:30.260 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:47:30.266 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:50:37.980 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:50:37.987 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:50:40.349 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:50:40.350 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:50:40.353 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:52:05.159 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:52:05.160 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:52:38.860 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:52:38.861 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:52:40.767 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:52:40.768 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:52:40.774 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:53:03.836 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:03.837 [http-nio-8080-exec-9] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:53:05.662 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:05.662 [http-nio-8080-exec-10] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:53:05.670 [http-nio-8080-exec-10] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:53:11.499 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:11.506 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:53:11.509 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:53:14.507 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:14.508 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:53:14.511 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:53:17.681 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:17.682 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:53:17.685 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:53:35.073 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:35.074 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:53:36.965 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:53:36.966 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:53:36.970 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:54:02.345 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:54:02.346 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:54:03.726 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:54:03.729 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:54:03.731 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:54:04.945 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:54:04.946 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:54:04.948 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:55:09.550 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:55:09.554 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:55:13.159 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:55:13.161 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:55:13.164 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:55:14.324 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:55:14.325 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:55:14.328 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:55:42.804 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:55:42.806 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:55:42.809 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:56:13.596 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:56:13.598 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:56:15.280 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:56:15.281 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:56:15.285 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:57:55.244 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:57:55.246 [http-nio-8080-exec-7] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:57:57.071 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:57:57.072 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:57:57.075 [http-nio-8080-exec-8] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:59:11.330 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:11.332 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:59:12.259 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:12.262 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:59:12.265 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:59:13.100 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:13.101 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:59:13.103 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+23:59:40.286 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:40.287 [http-nio-8080-exec-3] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+23:59:41.592 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:41.594 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+23:59:41.596 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+23:59:42.357 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+23:59:42.358 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+23:59:42.361 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success

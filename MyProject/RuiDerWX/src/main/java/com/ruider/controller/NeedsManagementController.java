@@ -3,6 +3,7 @@ package com.ruider.controller;
 import com.ruider.common.Result;
 import com.ruider.model.NeedsManagement;
 import com.ruider.service.NeedsManagementService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ import java.util.HashMap;
 @RequestMapping("needsManagement")
 public class NeedsManagementController {
 
-    Logger logger = LoggerFactory.getLogger(NeedsManagementController.class);
+    private final Logger logger = LoggerFactory.getLogger(NeedsManagementController.class);
 
     @Autowired
     private NeedsManagementService  needsManagementService;
@@ -49,20 +50,20 @@ public class NeedsManagementController {
     }
 
     @GetMapping("getNeedsByUserIdAndCategotyId")
-    public Result getNeedsByCategotyId(@RequestParam("userId") int userId, @RequestParam("categoryId") int categoryId) {
+    public Result getNeedsByUserIdAndCategotyId(@RequestParam("userId") int userId, @RequestParam("categoryId") int categoryId) {
         Result result = new Result();
         try{
-            logger.info("【获取类型列表开始】 getNeedsByCategotyId start");
+            logger.info("【获取类型列表开始】 getNeedsByUserIdAndCategotyId start");
             result.setData(needsManagementService.getNeedsByUserIdAndCategoryId(userId, categoryId));
             result.setMessage("获取类型列表成功");
             result.setIsSuccess(true);
-            logger.info("【获取类型列表成功】 getNeedsByCategotyId success");
+            logger.info("【获取类型列表成功】 getNeedsByUserIdAndCategotyId success");
             return result;
         }
         catch (Exception e) {
             result.setMessage("获取类型列表失败");
             result.setIsSuccess(false);
-            logger.error("【获取类型列表失败】 getNeedsByCategotyId fail", e);
+            logger.error("【获取类型列表失败】 getNeedsByUserIdAndCategotyId fail", e);
             return result;
         }
     }
@@ -143,4 +144,24 @@ public class NeedsManagementController {
             return result;
         }
     }
+
+    @GetMapping("getNeedsByCategoryId")
+    public Result getNeedsByCategoryId(@RequestParam("categoryId") int categoryId) {
+        Result result = new Result();
+        try{
+            logger.info("【获取类型列表开始】 getNeedsByCategoryId start");
+            result.setData(needsManagementService.getNeedsByCategoryId(categoryId));
+            result.setMessage("获取类型列表成功");
+            result.setIsSuccess(true);
+            logger.info("【获取类型列表成功】 getNeedsByCategoryId success");
+            return result;
+        }
+        catch (Exception e) {
+            result.setMessage("获取类型列表失败");
+            result.setIsSuccess(false);
+            logger.error("【获取类型列表失败】 getNeedsByCategoryId fail", e);
+            return result;
+        }
+    }
+
 }

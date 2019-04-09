@@ -1,0 +1,79 @@
+00:21:59.648 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:21:59.667 [http-nio-8080-exec-7] ERROR c.r.handle.GlobalExceptionHandle - 发生异常了！
+00:28:41.702 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:28:41.703 [http-nio-8080-exec-9] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:28:41.747 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:28:41.755 [http-nio-8080-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+00:28:42.545 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:28:42.632 [http-nio-8080-exec-9] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:28:46.756 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:28:46.759 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+00:28:46.794 [http-nio-8080-exec-10] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+00:28:52.424 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:28:52.425 [http-nio-8080-exec-1] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+00:28:52.428 [http-nio-8080-exec-1] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+00:30:16.332 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:30:16.334 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:30:16.338 [http-nio-8080-exec-3] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:30:24.917 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:30:24.918 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:30:24.921 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:30:27.985 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:30:27.987 [http-nio-8080-exec-5] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+00:30:28.010 [http-nio-8080-exec-5] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+00:31:30.781 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:31:30.782 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:31:30.785 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:33:15.603 [http-nio-8080-exec-9] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:33:15.604 [http-nio-8080-exec-9] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:33:15.607 [http-nio-8080-exec-9] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:35:43.986 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:35:43.987 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:35:43.989 [http-nio-8080-exec-1] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:36:42.210 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+00:36:42.211 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByCategoryId start
+00:36:42.214 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByCategoryId success
+00:54:41.378 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s684ms).
+06:37:48.660 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h43m7s247ms).
+07:04:22.571 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m33s944ms).
+08:52:20.757 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h47m28s152ms).
+08:52:43.699 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:52:43.722 [http-nio-8080-exec-4] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+08:52:45.407 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:52:45.623 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+08:52:45.646 [http-nio-8080-exec-5] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+08:53:20.531 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:53:20.534 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - getUserDetails start 
+08:53:20.539 [http-nio-8080-exec-6] INFO  com.ruider.controller.UserController - 【获取用户信息成功】getUserDetails success
+08:53:23.817 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:53:23.818 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表开始】 getNeedsByUserId start
+08:53:23.838 [http-nio-8080-exec-7] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表成功】 getNeedsByUserId success
+08:54:09.559 [http-nio-8080-exec-8] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:54:09.560 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+08:54:09.594 [http-nio-8080-exec-8] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+08:55:49.836 [http-nio-8080-exec-10] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:55:49.837 [http-nio-8080-exec-10] INFO  com.ruider.controller.UserController - 【获取微信用户信息成功】IfAuthorizationEd success
+08:55:51.503 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:55:51.506 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - addUserInfoIfNoSaved start
+08:55:51.509 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController - 【用户信息保存或者查询成功】addUserInfoIfNoSaved success
+08:56:00.473 [http-nio-8080-exec-2] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:00.474 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表开始】 getNeedsByUserId start
+08:56:00.486 [http-nio-8080-exec-2] INFO  c.r.c.NeedsManagementController - 【获取用户所有列表成功】 getNeedsByUserId success
+08:56:15.351 [http-nio-8080-exec-3] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:15.352 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表】 getMessageByNeedsIdAndCategoryId start
+08:56:15.378 [http-nio-8080-exec-3] INFO  c.r.c.MessageManageController - 【根据需求id获取评论回复列表成功】 getMessageByNeedsIdAndCategoryId success
+08:56:35.241 [http-nio-8080-exec-4] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:35.244 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+08:56:35.249 [http-nio-8080-exec-4] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+08:56:43.664 [http-nio-8080-exec-5] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:43.666 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+08:56:43.669 [http-nio-8080-exec-5] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+08:56:45.920 [http-nio-8080-exec-6] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:45.921 [http-nio-8080-exec-6] INFO  c.r.c.NeedsManagementController - 【获取类型列表开始】 getNeedsByUserIdAndCategotyId start
+08:56:45.923 [http-nio-8080-exec-6] INFO  c.r.c.NeedsManagementController - 【获取类型列表成功】 getNeedsByUserIdAndCategotyId success
+08:56:50.779 [http-nio-8080-exec-7] INFO  com.ruider.filter.XssFilter - 【自定义过滤器】 doFilter
+08:56:50.780 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量】 getNoWatchedMessageNo start
+08:56:50.795 [http-nio-8080-exec-7] INFO  c.r.c.MessageManageController - 【获取未被查看的消息数量成功】 getNoWatchedMessageNo success
+08:57:04.044 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+08:57:04.089 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:57:04.121 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

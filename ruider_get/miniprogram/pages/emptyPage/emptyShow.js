@@ -1,18 +1,18 @@
 // miniprogram/pages/emptyPage/emptyShow.js
+const app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    userId: app.globalData.userId,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    that.setData({
+      userId: app.globalData.userId,
+    })
   },
 
   /**

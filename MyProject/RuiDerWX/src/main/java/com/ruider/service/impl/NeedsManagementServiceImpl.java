@@ -3,6 +3,7 @@ package com.ruider.service.impl;
 import com.ruider.mapper.NeedsManagementMapper;
 import com.ruider.model.NeedsManagement;
 import com.ruider.service.NeedsManagementService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -93,5 +94,24 @@ public class NeedsManagementServiceImpl implements NeedsManagementService{
         needsManagement.setPhoneNo(paramMap.get("phoneNo").toString());
         needsManagement.setUpdateTime(new Date());
         needsManagementMapper.editNeeds(needsManagement);
+    }
+
+    @Override
+    public List<NeedsManagement> getNeedsByCategoryId(int categotyId) throws Exception{
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        List<NeedsManagement> list = needsManagementMapper.getNeedsByCategoryId(categotyId);
+        for(int i = 0; i<list.size(); i++) {
+            NeedsManagement needsManagement = list.get(i);
+            if(needsManagement.getIsOverTime() == 0) {
+                if (needsManagement.getDeadline().compareTo(new Date()) < 0 ) {
+                    needsManagement.setIsOverTime(1);
+                    needsManagementMapper.updateIsOverTime(needsManagement.getId());
+                    list.set(i, needsManagement);
+                }
+            }
+            needsManagement.setStartTime(simpleDateFormat.parse(simpleDateFormat.format(needsManagement.getStartTime())));
+            needsManagement.setDeadline(simpleDateFormat.parse(simpleDateFormat.format(needsManagement.getDeadline())));
+        }
+        return list;
     }
 }

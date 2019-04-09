@@ -1,6 +1,7 @@
 package com.ruider.controller;
 
 /**
+ * function 管理用户数据
  * Created by mahede on 2018/11/27.
  */
 import com.ruider.common.Result;
@@ -22,10 +23,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-
-/**
- * Created by Administrator on 2018\9\8 0008.
- */
 @RestController
 @RequestMapping("/userInfo")
 public class UserController {
@@ -42,10 +39,15 @@ public class UserController {
     @Value("${GRANTTYPE}")
     private String GRANTTYPE;
 
-    Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @GetMapping("test")
-    public Result test(String encryptedData, String iv, String code) {
+    /*
+     * function: 用户访问入口，使用code换取openId
+     * @Param code
+     * @return openid
+     */
+    @GetMapping("IfAuthorizationEd")
+    public Result IfAuthorizationEd(String encryptedData, String iv, String code) {
         Result result = new Result();
 
         if (code == null || code.length() == 0) {
@@ -54,11 +56,11 @@ public class UserController {
             return result;
         }
 
-        try{
-            logger.info("editUserDetails start");
+        /*try{
+            logger.info("monitor if user grant authorization start");
 
             String params = "appid=" + APPID + "&secret=" + APPSECRECT + "&js_code=" + code + "&grant_type=" + GRANTTYPE;
-            //发送请求
+            //发送请求dc
             String sr = HttpRequest.sendGet("https://api.weixin.qq.com/sns/jscode2session", params);
             //解析相应内容（转换成json对象）
             JSONObject json = JSONObject.fromObject(sr);
@@ -80,59 +82,33 @@ public class UserController {
             result.setIsSuccess(false);
             result.setMessage("获取微信用户信息成功");
             return result;
-        }
+        }*/
+        String session_key = "RMB5IApZWVhJypWD26cEtQ==";
+        //用户的唯一标识（openid）
+        String openid = "ovYLr4vw4CTUKIG_eraz8PMr_oc4";
+        Map<String,String> userInfo = new HashMap<>();
+        userInfo.put("session_key", session_key);
+        userInfo.put("openid", openid);
+        result.setIsSuccess(true);
+        result.setData(userInfo);
+        result.setMessage("获取微信用户信息成功");
+        logger.info("【获取微信用户信息成功】IfAuthorizationEd success");
+        return result;
     }
 
 
-    @RequestMapping("/toLogin")
-    public  boolean login (String username, String password){
-        System.out.println ( "微信小程序调用接口！！！用户名:" + username + "密码:" + password );
-        boolean login = userService.login ( username, password );
-        if (login) {
-            return true;
-        }
-        return false;
-    }
 
-    /*@ResponseBody
-    @RequestMapping(value = "/getOpenId", method = RequestMethod.GET) // 获取用户信息
-    public String getOpenId(@Param("code") String code, @RequestParam("headurl") String headurl,
-                            @RequestParam("nickname") String nickname, @RequestParam("sex") String sex,
-                            @RequestParam("country") String country, @RequestParam("province") String province,
-                            @RequestParam("city") String city) {
-        String WX_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code";
-        try {
-            if (StringUtils.isBlank(code)) {
-                System.out.println("code为空");
-            } else {
-                String requestUrl = WX_URL.replace("APPID", APPID).replace("SECRET", APPSECRECT)
-                        .replace("JSCODE", code).replace("authorization_code", GRANTTYPE);
-                JSONObject jsonObject = CommonUtils.httpsRequest(requestUrl, "GET", null);
-                if (jsonObject != null) {
-                    try {
-                        // 业务操作
-                        String openid = jsonObject.getString("openid");
-                        wechatService.selectUserByOpenId(openid, headurl, nickname, sex, country, province, city);
-                        return openid;
-                    } catch (Exception e) {
-                        System.out.println("业务操作失败");
-                        e.printStackTrace();
-                    }
-                } else {
-                    System.out.println("code无效");
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "错误";
-    }*/
-
-    @PostMapping(value = "addUserInfoIfNoSaved")
-    public Result addUserInfoIfNoSaved (@RequestBody HashMap<String,Object> paramMap) {
+    /*
+     * function: 用户访问权限允许，新用户添加到用户表
+     * @Param paramMap
+     * @return userId,openId
+     */
+    /*
+    @RequestMapping("/AuthorizationEd")
+    public  Result AuthorizationEd (@RequestBody HashMap<String,Object> paramMap){
         Result result = new Result();
         try{
-            logger.info("addUserInfoIfNoSaved start");
+            logger.info("AuthorizationEd and add userInfo start");
             int ret = userService.addUser(paramMap);
             if(ret == -1) {
                 result.setCode(Result.ALREADY_SAVED);
@@ -153,21 +129,52 @@ public class UserController {
             result.setMessage("用户信息保存失败");
             return result;
         }
+    }*/
+
+
+    /*
+     * function: 用户访问权限允许，新用户添加到用户表
+     * @Param paramMap
+     * @return userId,openId
+     */
+    @PostMapping(value = "addUserInfoIfNoSaved")
+    public Result addUserInfoIfNoSaved (@RequestBody HashMap<String,Object> paramMap) {
+        Result result = new Result();
+        try{
+            logger.info("addUserInfoIfNoSaved start");
+            int ret = userService.addUser(paramMap);
+            result.setIsSuccess(true);
+            result.setData(ret);
+            result.setMessage("用户信息保存或者查询成功");
+            logger.info("【用户信息保存或者查询成功】addUserInfoIfNoSaved success");
+            return result;
+        }catch (Exception e) {
+            logger.error("【用户信息保存或者查询失败】addUserInfoIfNoSaved fail", e);
+            result.setCode(Result.FAIL_CODE);
+            result.setIsSuccess(false);
+            result.setMessage("用户信息保存或者查询失败");
+            return result;
+        }
     }
 
-    @PostMapping(value = "getUserDetails")
-    public Result getUserDetails(@RequestBody HashMap<String,Object> paramMap) {
+    /*
+     * function: 获取用户数据
+     * @Param paramMap
+     * @return Result
+     */
+    @GetMapping(value = "getUserDetails")
+    public Result getUserDetails(@RequestParam("userId") String userId) {
         Result result = new Result();
         try {
             logger.info("getUserDetails start ");
-            User user = userService.getUserDetails(paramMap);
+            User user = userService.getUserDetails(Integer.valueOf(userId));
             result.setIsSuccess(true);
             result.setData(user);
             result.setMessage("获取用户信息成功");
-            logger.info("【获取用户信息成功】getUserDetails success, userName:" + paramMap.get("userName").toString());
+            logger.info("【获取用户信息成功】getUserDetails success");
             return result;
         }catch (Exception e){
-            logger.error("【获取用户信息成功】getUserDetails fail, userName:" + paramMap.get("userName").toString(), e);
+            logger.error("【获取用户信息成功】getUserDetails fail", e);
             result.setCode(Result.FAIL_CODE);
             result.setIsSuccess(false);
             result.setMessage("获取用户信息失败");
@@ -175,6 +182,11 @@ public class UserController {
         }
     }
 
+    /*
+     * function: 编辑用户数据
+     * @Param paramMap
+     * @return Result
+     */
     @PostMapping(value = "editUserDetails")
     public Result editUserDetails (@RequestBody HashMap<String,Object> paramMap) {
         Result result = new Result();
@@ -193,6 +205,7 @@ public class UserController {
             return result;
         }
     }
+
 
 
 }

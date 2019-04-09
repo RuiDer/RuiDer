@@ -10,7 +10,7 @@ public class User {
 
     private int id;
 
-    private String userName;
+    private String nickName;
 
     private int age;
 
@@ -32,7 +32,7 @@ public class User {
 
     private String openId;
 
-    private String headUrl;
+    private String headurl;
 
     private String userIp;
 
@@ -69,11 +69,11 @@ public class User {
     }
 
     public String getHeadurl() {
-        return headUrl;
+        return headurl;
     }
 
     public void setHeadurl(String headUrl) {
-        this.headUrl = headUrl;
+        this.headurl = headUrl;
     }
 
     public String getUserip() {
@@ -86,9 +86,9 @@ public class User {
 
     public User() {}
 
-    public User(int id, String username,int age, String password, String mobilePhone, String image, String autograph, int status, String realName, String sex, int level, String openid, String headurl, String userip, String createTime, String extendField1, String extendField2, String extendField3, String extendField4, String extendField5, String extendField6, String extendField7) {
+    public User(int id, String nickName,int age, String password, String mobilePhone, String image, String autograph, int status, String realName, String sex, int level, String openid, String headurl, String userip, String createTime, String extendField1, String extendField2, String extendField3, String extendField4, String extendField5, String extendField6, String extendField7) {
         this.id = id;
-        this.userName = username;
+        this.nickName = nickName;
         this.age = age;
         this.password = password;
         this.mobilePhone = mobilePhone;
@@ -99,7 +99,7 @@ public class User {
         this.sex = sex;
         this.level = level;
         this.openId = openid;
-        this.headUrl = headurl;
+        this.headurl = headurl;
         this.userIp = userip;
         this.createTime = createTime;
         this.extendField1 = extendField1;
@@ -111,8 +111,8 @@ public class User {
         this.extendField7 = extendField7;
     }
 
-    public User(String userName, int age, String mobilePhone, String sex, String openId, String userIp, String createtime) {
-        this.userName = userName;
+    public User(String nickName, int age, String mobilePhone, String sex, String openId, String userIp, String createtime) {
+        this.nickName = nickName;
         this.age = age;
         this.mobilePhone = mobilePhone;
         this.sex = sex;
@@ -129,12 +129,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return userName;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setUsername(String userName) {
-        this.userName = userName;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getPassword() {
@@ -269,7 +269,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", userName='" + nickName + '\'' +
                 ", age=" + age +
                 ", password='" + password + '\'' +
                 ", mobilePhone='" + mobilePhone + '\'' +
@@ -280,7 +280,7 @@ public class User {
                 ", sex='" + sex + '\'' +
                 ", level=" + level +
                 ", openId='" + openId + '\'' +
-                ", headUrl='" + headUrl + '\'' +
+                ", headUrl='" + headurl + '\'' +
                 ", userIp='" + userIp + '\'' +
                 ", createTime='" + createTime + '\'' +
                 ", extendField1='" + extendField1 + '\'' +

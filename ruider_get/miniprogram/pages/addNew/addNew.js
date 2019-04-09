@@ -1,13 +1,12 @@
 // miniprogram/pages/editUser/editUserDetails.js
-var app = getApp();
-
+const app = getApp();
 Page({
   /**
    * 页面的初始数据
    */
 
   data: {
-    userId:1,
+    userId: '',
     // 字数限制
     current: 0,
     max: 300,
@@ -68,64 +67,94 @@ Page({
   },
 
   formSubmit: function (e) {
-    var data = { "categoryId": this.data.index1, "userId": 1, "title": e.detail.value.title, "content": e.detail.value.content, "startTime": e.detail.value.startTime, "deadline": e.detail.value.deadline, "phoneNo": e.detail.value.phoneNo, "qq": e.detail.value.qq, "weChat": e.detail.value.weChat, "limitNo": e.detail.value.limitNo };
-    wx.showModal({
-      title: '',
-      content: '确定添加吗？',
-      icon: 'success',
-      duration: 2000,
-      success:function(res) {
-        if(res.confirm) {
-          wx.request({
-            url: 'http://localhost:8080/needsManagement/addNeeds',
-            method: 'POST',
-            data: JSON.stringify(data),
-            header: {
-              'content-type': 'application/json' // 默认值
-            },
-            success: (res) => {
-              if (res.data.isSuccess) {
-                wx.showToast({
-                  title: '成功',
-                  icon: 'success',
-                  duration: 2000,
-                })
-                console.log("新增需求信息成功");
-              }
-              //success: function(res) {
-                //if (res.confirm) {
-                  //wx.navigateTo({
-                    //url: '../myList/myList'
-                  //})
-                //}
-                //else {
-                  //wx.navigateTo({
-                    //url: '../myList/myList'
-                  //})
-                //}
-              //}
-              else {
-                wx.showToast({
-                  title: '失败',
-                  icon:'fail',
-                  duration:5000
-                })
-                //wx.navigateTo({
-                  //url: '../myList/myList'
-                //})
-              }
+    if (e.detail.value.title.length == 0) {
+      wx.showToast({
+        title: '标题不能为空',
+        icon: 'fail',
+      })
+    } else if (e.detail.value.content.length == 0) {
+      wx.showToast({
+        title: '需求内容不能为空',
+        icon: 'fail',
+      })
+    } else if (e.detail.value.limitNo.length == 0) {
+      wx.showToast({
+        title: '人数限制不能为空',
+        icon: 'fail',
+      })
+    } else if (e.detail.value.qq.length == 0 && e.detail.value.weChat.length == 0 && e.detail.value.phoneNo.length == 0) {
+      wx.showModal({
+        content: 'qq,微信，手机号至少填写一个',
+        showCancel:false,
+        icon: 'fail',
+      })
+    } else if (e.detail.value.phoneNo.length != 11){
+      wx.showToast({
+        title: '手机号有误',
+        icon: 'fail',
+      })
+    }
+    else {
+        var data = { "categoryId": this.data.index1, "userId": this.data.userId, "title": e.detail.value.title, "content": e.detail.value.content, "startTime": e.detail.value.startTime, "deadline": e.detail.value.deadline, "phoneNo": e.detail.value.phoneNo, "qq": e.detail.value.qq, "weChat": e.detail.value.weChat, "limitNo": e.detail.value.limitNo };
+        wx.showModal({
+          title: '',
+          content: '确定添加吗？',
+          icon: 'success',
+          duration: 2000,
+          success:function(res) {
+            if(res.confirm) {
+              wx.request({
+                url: 'http://localhost:8080/needsManagement/addNeeds',
+                method: 'POST',
+                data: JSON.stringify(data),
+                header: {
+                  'content-type': 'application/json' // 默认值
+                },
+                success: (res) => {
+                  if (res.data.isSuccess) {
+                    wx.showToast({
+                      title: '成功',
+                      icon: 'success',
+                      duration: 2000,
+                    })
+                    console.log("新增需求信息成功");
+                  }
+                  //success: function(res) {
+                    //if (res.confirm) {
+                      //wx.navigateTo({
+                        //url: '../myList/myList'
+                      //})
+                    //}
+                    //else {
+                      //wx.navigateTo({
+                        //url: '../myList/myList'
+                      //})
+                    //}
+                  //}
+                  else {
+                    wx.showToast({
+                      title: '失败',
+                      icon:'fail',
+                      duration:5000
+                    })
+                    //wx.navigateTo({
+                      //url: '../myList/myList'
+                    //})
+                  }
+                }
+              })
             }
-          })
-        }
-      }
-    })
+          }
+        })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      //userId:options.userId,
+    let that = this;
+    that.setData({
+      userId: app.globalData.userId,
     })
   },
 

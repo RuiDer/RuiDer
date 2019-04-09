@@ -101,6 +101,6 @@
             </view>
         </view>
         <view class="btn-area">
-         <button type='primary' formType="submit">提交</button>
-         </view>
-        </form>
+            <button type='primary' formType="submit">提交</button>
+        </view>
+</form>
